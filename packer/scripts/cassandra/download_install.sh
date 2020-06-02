@@ -6,6 +6,6 @@ sudo apt-get install -y openjdk-8-jdk-headless
 sudo apt-get install -y cloud-utils
 sudo apt-get install -y python-dev python-setuptools python-yaml
 
-# download and uncompress Cassandra
-mkdir cassandra; wget -c http://archive.apache.org/dist/cassandra/4.0-alpha4/apache-cassandra-4.0-alpha4-bin.tar.gz -O - | tar -xz -C cassandra --strip-components=1
+# download and uncompress DSE
+mkdir dse; wget -c https://downloads.datastax.com/enterprise/dse-6.8.tar.gz -O - | tar -xz -C dse --strip-components=1
 

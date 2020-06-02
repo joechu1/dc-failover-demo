@@ -63,6 +63,14 @@ resource aws_security_group sg_bastion_r1 {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+  # For OpsCenter
+  ingress {
+    from_port   = 8888
+    to_port     = 8888
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 }
 
 resource aws_security_group sg_client_r1 {

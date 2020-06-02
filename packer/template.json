@@ -119,7 +119,7 @@
     },
     {
       "type": "shell",
-      "inline": "chmod +x *.sh"
+      "inline": "chmod +x *.sh; sudo mkdir /var/lib/cassandra; sudo mkdir /var/log/cassandra; sudo chmod 777 /var/lib/cassandra; sudo chmod 777 /var/log/cassandra"
     }
   ]
 }
